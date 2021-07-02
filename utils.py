@@ -17,7 +17,6 @@ def gpu_memory_watcher():
         host = server.split(' ')[1]
         cmd = cmd.replace('host', host)
         cmd = cmd.replace('username', username)
-        print(cmd)
         device_memories = subprocess.getoutput(cmd)
         if 'command not found' in device_memories:
             raise CUDANotFoundException("\033[;91;1mCUDA is not found in current environment.\033[0m")
