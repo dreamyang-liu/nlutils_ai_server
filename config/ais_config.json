@@ -1,0 +1,46 @@
+{
+    "ServerTable": [
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        },
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        },
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        },
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        },
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        },
+        {
+            "username": "mliu444",
+            "host": "localhost",
+            "port": 22,
+            "remotePath": "~/",
+            "localAlias": "local"
+        }
+    ]
+}
