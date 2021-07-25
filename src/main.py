@@ -1,16 +1,16 @@
-# import os
 
-# from utils import gpu_memory_watcher
-
-
-# server_infos = gpu_memory_watcher()
-# for key, val in server_infos.items():
-#     for device in val:
-#         if device['device_available_memory'] > 15000:
-#             print(key, device['device_id'])
-
+from TaskManager import TaskManager
+from AIServerController import GLOBAL_CONTROLLER
 from AIServerSocket import AIServerSocketStore
+from GPUManager import GPUServerManager
+from CommandHandler import COMMAND_HANDLER_STORE
 
-x = AIServerSocketStore('asd')
-x.bind('127.0.0.1', 22005)
-x.run()
+GLOBAL_CONTROLLER.gpu_manager = GPUServerManager.get_instance()
+GLOBAL_CONTROLLER.gpu_manager.run()
+GLOBAL_CONTROLLER.command_handler_store = COMMAND_HANDLER_STORE
+GLOBAL_CONTROLLER.task_manager = TaskManager()
+GLOBAL_CONTROLLER.task_manager.run()
+
+GLOBAL_CONTROLLER.socket = AIServerSocketStore()
+GLOBAL_CONTROLLER.socket.bind()
+GLOBAL_CONTROLLER.socket.run()

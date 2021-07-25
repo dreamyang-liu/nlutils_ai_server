@@ -43,5 +43,15 @@
             "localAlias": "local"
         }
     ],
-    "GPUSummaryUpdatePeriod": 3600
+    "GPUSummaryUpdatePeriod": 3600,
+    "AiServerHost": "127.0.0.1",
+    "AiServerPort": 22005,
+    "AiServerAlias": "local",
+    "AIWorkerTable": [
+        {
+            "alias": "aliyun",
+            "host": "47.103.90.218",
+            "port": 22105
+        }
+    ]
 }

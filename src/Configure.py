@@ -37,7 +37,7 @@ class AISConfigure(object):
             
     @classmethod
     def init(cls):
-        with open("./config/aiw_config.json", 'r') as f:
+        with open("../config/ais_config.json", 'r') as f:
             cls._root = json.load(f)
         if not hasattr(cls, '_root'):
             raise AISConfigureLoadException("Could not load ai server config file.")
